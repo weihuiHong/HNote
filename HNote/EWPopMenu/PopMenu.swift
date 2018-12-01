@@ -1,5 +1,5 @@
 //
-//  EWPopMenu.swift
+//  PopMenu.swift
 //  HNote
 //
 //  Created by 洪伟辉 on 2018/11/28.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-let NavigationMenuShared = EWPopMenu.shared
+let NavigationMenuShared = PopMenu.shared
 
-class EWPopMenu: NSObject {
-    static let shared = EWPopMenu()
-    private var menuView: EWPopMenuView?
+class PopMenu: NSObject {
+    static let shared = PopMenu()
+    private var menuView: PopMenuView?
 
     public func showPopMenuSelecteWithFrameWidth(width: CGFloat, height: CGFloat, point: CGPoint, item: [String], imgSource: [String], action: @escaping ((Int) -> ())){
         weak var weakSelf = self
@@ -21,7 +21,7 @@ class EWPopMenu: NSObject {
             weakSelf?.hideMenu()
         }
         let window = UIApplication.shared.windows.first
-        self.menuView = EWPopMenuView(width: width, height: height, point: point, items: item, imgSource: imgSource, action: { (index) in
+        self.menuView = PopMenuView(width: width, height: height, point: point, items: item, imgSource: imgSource, action: { (index) in
             ///点击回调
             action(index)
             weakSelf?.hideMenu()

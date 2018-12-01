@@ -1,5 +1,5 @@
 //
-//  EWMenuTableViewCell.swift
+//  MenuTableViewCell.swift
 //  HNote
 //
 //  Created by 洪伟辉 on 2018/11/28.
@@ -15,8 +15,8 @@ let kImageWidth: CGFloat = 18.0
 /// imageView与label之间留白
 let kImgLabelWidth: CGFloat = 10.0
 
-class EWMenuTableViewCell: UITableViewCell {
-    static let identifier = "EWMenuTableViewCell"
+class MenuTableViewCell: UITableViewCell {
+    static let identifier = "MenuTableViewCell"
     
     private lazy var iconImg: UIImageView = {
         let imageView = UIImageView(frame: CGRect(x: kLineXY, y: (itemHeight - kImageWidth)/2, width: kImageWidth, height: kImageWidth))

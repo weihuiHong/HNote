@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1748E89DE3D5B95B064ED838 /* Pods_HNoteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FDC15BDDC654AB8F5CE0CC /* Pods_HNoteTests.framework */; };
 		A3A9B9CF863383539C2E26F2 /* Pods_HNoteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB5505D3FFBF18B49568ECDE /* Pods_HNoteUITests.framework */; };
+		B704983C21B20B7500D404C5 /* sample.md in Resources */ = {isa = PBXBuildFile; fileRef = B704983B21B20B7400D404C5 /* sample.md */; };
 		B70E475921AC370C00ED0032 /* SidebarTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70E475821AC370C00ED0032 /* SidebarTableCellView.swift */; };
 		B70E475B21AC470400ED0032 /* NotesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70E475A21AC470400ED0032 /* NotesTableView.swift */; };
 		B70E475D21AC471400ED0032 /* NotesTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70E475C21AC471400ED0032 /* NotesTableCellView.swift */; };
@@ -16,9 +17,9 @@
 		B714924921AEBFC0002F3B95 /* NoteItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B714924721AEBFC0002F3B95 /* NoteItem+CoreDataProperties.swift */; };
 		B7154B8721AC191E00F41B20 /* SidebarTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7154B8621AC191E00F41B20 /* SidebarTableView.swift */; };
 		B71BAFFD21AEE23300F2C58B /* RichTextController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71BAFFC21AEE23300F2C58B /* RichTextController.swift */; };
-		B71BB02A21B00B0D00F2C58B /* EWPopMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71BB02721B00B0D00F2C58B /* EWPopMenu.swift */; };
-		B71BB02B21B00B0D00F2C58B /* EWPopMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71BB02821B00B0D00F2C58B /* EWPopMenuView.swift */; };
-		B71BB02C21B00B0D00F2C58B /* EWMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71BB02921B00B0D00F2C58B /* EWMenuTableViewCell.swift */; };
+		B71BB02A21B00B0D00F2C58B /* PopMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71BB02721B00B0D00F2C58B /* PopMenu.swift */; };
+		B71BB02B21B00B0D00F2C58B /* PopMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71BB02821B00B0D00F2C58B /* PopMenuView.swift */; };
+		B71BB02C21B00B0D00F2C58B /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71BB02921B00B0D00F2C58B /* MenuTableViewCell.swift */; };
 		B758F84121AB831300547BE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B758F84021AB831300547BE9 /* AppDelegate.swift */; };
 		B758F84321AB831300547BE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B758F84221AB831300547BE9 /* ViewController.swift */; };
 		B758F85621AB831500547BE9 /* HNoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B758F85521AB831500547BE9 /* HNoteTests.swift */; };
@@ -110,17 +111,17 @@
 		535C63EA8ABCFFE3CA68DA78 /* Pods-HNoteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HNoteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HNoteUITests/Pods-HNoteUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6EAD2DF6A568419C9A674FFB /* Pods_HNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A88E75E5D37D8F321D983AE4 /* Pods-HNoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HNoteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HNoteTests/Pods-HNoteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B704983B21B20B7400D404C5 /* sample.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = sample.md; sourceTree = "<group>"; };
 		B70E475821AC370C00ED0032 /* SidebarTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarTableCellView.swift; sourceTree = "<group>"; };
 		B70E475A21AC470400ED0032 /* NotesTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableView.swift; sourceTree = "<group>"; };
 		B70E475C21AC471400ED0032 /* NotesTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableCellView.swift; sourceTree = "<group>"; };
-		B714923721AE7D7C002F3B95 /* sample.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = sample.md; path = "../../../Downloads/MarkdownView-master/sample.md"; sourceTree = "<group>"; };
 		B714924621AEBFC0002F3B95 /* NoteItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteItem+CoreDataClass.swift"; sourceTree = "<group>"; };
 		B714924721AEBFC0002F3B95 /* NoteItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B7154B8621AC191E00F41B20 /* SidebarTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarTableView.swift; sourceTree = "<group>"; };
 		B71BAFFC21AEE23300F2C58B /* RichTextController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichTextController.swift; sourceTree = "<group>"; };
-		B71BB02721B00B0D00F2C58B /* EWPopMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EWPopMenu.swift; sourceTree = "<group>"; };
-		B71BB02821B00B0D00F2C58B /* EWPopMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EWPopMenuView.swift; sourceTree = "<group>"; };
-		B71BB02921B00B0D00F2C58B /* EWMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EWMenuTableViewCell.swift; sourceTree = "<group>"; };
+		B71BB02721B00B0D00F2C58B /* PopMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopMenu.swift; sourceTree = "<group>"; };
+		B71BB02821B00B0D00F2C58B /* PopMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopMenuView.swift; sourceTree = "<group>"; };
+		B71BB02921B00B0D00F2C58B /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		B758F83D21AB831300547BE9 /* HNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B758F84021AB831300547BE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B758F84221AB831300547BE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -248,7 +249,7 @@
 		B714923621AE7D69002F3B95 /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				B714923721AE7D7C002F3B95 /* sample.md */,
+				B704983B21B20B7400D404C5 /* sample.md */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -332,9 +333,9 @@
 		B71BB02621B00B0200F2C58B /* EWPopMenu */ = {
 			isa = PBXGroup;
 			children = (
-				B71BB02921B00B0D00F2C58B /* EWMenuTableViewCell.swift */,
-				B71BB02721B00B0D00F2C58B /* EWPopMenu.swift */,
-				B71BB02821B00B0D00F2C58B /* EWPopMenuView.swift */,
+				B71BB02921B00B0D00F2C58B /* MenuTableViewCell.swift */,
+				B71BB02721B00B0D00F2C58B /* PopMenu.swift */,
+				B71BB02821B00B0D00F2C58B /* PopMenuView.swift */,
 			);
 			path = EWPopMenu;
 			sourceTree = "<group>";
@@ -531,6 +532,7 @@
 			files = (
 				B7A4990E21B039C30066AA61 /* settings@2x.png in Resources */,
 				B7A498F221B039C30066AA61 /* copy_white.png in Resources */,
+				B704983C21B20B7500D404C5 /* sample.md in Resources */,
 				B7A4992521B039C40066AA61 /* home.png in Resources */,
 				B7A4990021B039C30066AA61 /* home_white.png in Resources */,
 				B7A4991521B039C30066AA61 /* plus@3x.png in Resources */,
@@ -705,7 +707,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B71BB02A21B00B0D00F2C58B /* EWPopMenu.swift in Sources */,
+				B71BB02A21B00B0D00F2C58B /* PopMenu.swift in Sources */,
 				B758F84321AB831300547BE9 /* ViewController.swift in Sources */,
 				B70E475D21AC471400ED0032 /* NotesTableCellView.swift in Sources */,
 				B714924821AEBFC0002F3B95 /* NoteItem+CoreDataClass.swift in Sources */,
@@ -713,10 +715,10 @@
 				B79AAD9521AE255A005EFF4D /* NoteContentController.swift in Sources */,
 				B70E475B21AC470400ED0032 /* NotesTableView.swift in Sources */,
 				B790A0A321AE5BA3005D2A29 /* CoreDataManager.swift in Sources */,
-				B71BB02C21B00B0D00F2C58B /* EWMenuTableViewCell.swift in Sources */,
+				B71BB02C21B00B0D00F2C58B /* MenuTableViewCell.swift in Sources */,
 				B71BAFFD21AEE23300F2C58B /* RichTextController.swift in Sources */,
 				B70E475921AC370C00ED0032 /* SidebarTableCellView.swift in Sources */,
-				B71BB02B21B00B0D00F2C58B /* EWPopMenuView.swift in Sources */,
+				B71BB02B21B00B0D00F2C58B /* PopMenuView.swift in Sources */,
 				B714924921AEBFC0002F3B95 /* NoteItem+CoreDataProperties.swift in Sources */,
 				B7956A6D21AE78E8003D4510 /* Model.xcdatamodeld in Sources */,
 				B7F9E6E821ACDCC900C93D75 /* SettingViewController.swift in Sources */,

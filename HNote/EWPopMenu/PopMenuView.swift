@@ -1,5 +1,5 @@
 //
-//  EWPopMenuView.swift
+//  PopMenuView.swift
 //  HNote
 //
 //  Created by 洪伟辉 on 2018/11/28.
@@ -24,7 +24,7 @@ struct ScreenInfo {
 let itemHeight: CGFloat = 36.0
 let itemWidth: CGFloat = 113.0
 
-class EWPopMenuView: UIView {
+class PopMenuView: UIView {
     public var touchBlock: (()->())?
     /// 点击cell回调
     public var indexBlock: ((Int)->())?
@@ -70,7 +70,6 @@ class EWPopMenuView: UIView {
         if imgSource.count == 0{
             self.layerWidth = 100
         }
-        /// 弱引用防止闭包循环引用
         weak var weakSelf = self
         if action != nil{
             weakSelf?.indexBlock = { row in
@@ -103,7 +102,7 @@ class EWPopMenuView: UIView {
         tableView.layer.cornerRadius = 5
         tableView.layer.masksToBounds = true
         tableView.isScrollEnabled = true
-        tableView.register(EWMenuTableViewCell.self, forCellReuseIdentifier: EWMenuTableViewCell.identifier)
+        tableView.register(MenuTableViewCell.self, forCellReuseIdentifier: MenuTableViewCell.identifier)
     }
     /// drawRect方法,画tableView上的小三角形
     override func draw(_ rect: CGRect) {
@@ -130,7 +129,7 @@ class EWPopMenuView: UIView {
     }
 
 }
-extension EWPopMenuView:UITableViewDelegate,UITableViewDataSource{
+extension PopMenuView:UITableViewDelegate,UITableViewDataSource{
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return itemHeight
@@ -139,8 +138,8 @@ extension EWPopMenuView:UITableViewDelegate,UITableViewDataSource{
         return self.titleSource.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier:  EWMenuTableViewCell.identifier) as? EWMenuTableViewCell else {
-            return EWMenuTableViewCell()
+        guard let cell = tableView.dequeueReusableCell(withIdentifier:  MenuTableViewCell.identifier) as? MenuTableViewCell else {
+            return MenuTableViewCell()
         }
         cell.setContentBy(titArray: self.titleSource, imgArray: self.imgSource, row: indexPath.row)
         cell.conLabel.text = self.titleSource[indexPath.row]
